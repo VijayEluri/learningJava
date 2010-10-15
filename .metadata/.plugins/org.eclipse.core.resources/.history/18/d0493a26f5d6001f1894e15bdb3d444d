@@ -1,0 +1,66 @@
+package edu.sabanciuniv.main;
+import edu.sabanciuniv.objects.Student;
+
+
+public class MainClass2 {
+
+	//Variable assignments
+	
+	public static void main(String[] args) {
+		
+		
+		//when primitive types are assigned to each other
+		//the value is copied
+		int x = 5;
+		int y = x;
+		
+		x++;
+		
+		System.out.println(x);
+		System.out.println(y);
+		
+		
+		Student s1 = new Student();
+		
+		s1.name = "altug";
+		
+		Student s2 = s1;
+		
+		s2.name = "mehmet";
+		
+		System.out.println("Student 1:" +s1.name);
+		System.out.println("Student 2:" + s2.name);
+		
+		Student s3 = new Student();
+		s3.name = "ahmet";
+		
+		System.out.println("Student 3:" + s3.name);
+		
+		System.out.println("-----ASSIGNMET-----");
+		
+		s3 = s1;
+		
+		s1.name = "haydar";
+		
+		s1.courses = new String[]{"Math", "Bio"};
+		
+		System.out.println("Student 1:" + s1.name);
+		System.out.println("Student 3:" + s3.name);
+		
+		System.out.println("-------AFTER COPY------");
+		
+		
+		
+	Student s4 = s1.copyMe();
+	
+	
+	s1.name = "ahmet";
+	
+	System.out.println(s1.name);
+	System.out.println(s4.name);
+		
+	
+
+	}
+	
+}

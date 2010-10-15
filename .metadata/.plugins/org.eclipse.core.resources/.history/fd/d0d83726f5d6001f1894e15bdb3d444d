@@ -1,0 +1,61 @@
+package com.sabanciuniv.encapsulation;
+
+ public class Person {
+	
+	private String name;
+	private String age;	
+	private String department;
+	private String address;
+	
+	public Person() {
+		
+	}
+	
+	public Person(String _name, int _age) {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void speak(){
+		
+		System.out.println("Hi my name is " + name 
+				+ " my age is " + age);
+		
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAge() {
+		return age;
+	}
+
+	public void setAge(String age) {
+		this.age = age;
+	}
+
+	public String getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(String department) {
+		this.department = department;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	
+	
+
+	
+	
+}

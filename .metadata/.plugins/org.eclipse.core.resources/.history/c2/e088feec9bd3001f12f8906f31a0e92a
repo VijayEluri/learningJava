@@ -1,0 +1,61 @@
+
+public class MainClass {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		
+		String software = "Software Eng";
+		String physics = "Physics";
+		String math = "Math";
+		String turkish = "Turkish";
+		String it = "IT";
+		
+
+		
+		
+		Student student1 = new Student("altug",
+				"tanaltay",
+				30,
+				"kadikoy",
+				"CS",
+				new String[]{math,turkish,physics});
+		
+		Student student2 = new Student("baris",
+				"tan",
+				35,
+				"pendik",
+				"CS",
+				new String[]{math,turkish,physics});
+		
+		
+		
+		
+		Student[] students =new Student[]{student1,student2};
+		
+		for (Student stu : students) {
+			
+			System.out.println(stu.name);
+			System.out.println(stu.surname);
+			System.out.println(stu.age);
+			System.out.println(stu.department);
+			
+			System.out.println("Courses: ");
+			System.out.println(student1.address);
+
+			
+			for (String course : stu.courses) {
+				System.out.println(course);
+			
+			
+		}
+	
+		}
+
+	System.out.println(student1.avgGrades(30,35,35));
+	
+	},
+
+}

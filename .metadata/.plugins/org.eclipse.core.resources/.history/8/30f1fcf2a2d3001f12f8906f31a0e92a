@@ -1,0 +1,5 @@
+package com.sabanciuniv.access;
+
+public class Person {
+
+}

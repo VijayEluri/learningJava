@@ -1,0 +1,28 @@
+package com.sabanciuniv.access;
+
+ public class Person {
+	
+	private String name;
+	private String age;
+	
+	protected String department;
+	
+	String address;
+	
+	public Person() {
+		
+	}
+	
+	public Person(String _name, int _age) {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void speak(){
+		
+		System.out.println("Hi my name is " + name 
+				+ " my age is " + age);
+		
+	}
+	
+	
+}
