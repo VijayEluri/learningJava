@@ -1,6 +1,5 @@
-
 public enum Apple {
-	iMac(10), MacPro(15);
+	iMac(10), MacPro(15), MacBook(12);
 	
 	private int price;
 	
